@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+</head>
+<body>
+<form action="https://form-practice.herokuapp.com/create-application" method="post">
+  <legend>Personal Information</legend>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label>
+      Surname
+      <input name="surname" type="text" required minlength="1" maxlength="100" placeholder="surname">
+    </label>
+    <label>
+      Name
+      <input name="name-label" type="text" required minlength="1" maxlength="100" placeholder="name">
+    </label>
+    <label>
+      How old are you?
+      <input name="age-label" type="number" required min="0" max="150" placeholder="Age label">
+    </label>
+    <label>
+      I accept the terms of the agreement
+      <input name="agreement-label" type="checkbox">
+    </label>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Registration</legend>
+    <label>
+      Email label
+      <input name="email-label" type="email" required placeholder="Email label">
+    </label>
+    <label>
+      Password label
+      <input name="password-label" type="password" autocomplete="off" placeholder="Password label">
+    </label>
+  </fieldset>
+  
+  <fieldset>
+    <legend>An interesting fact About you!</legend>
+    <label name="you love cats">
+      Do you lave cats?
+      <label>
+        <input name="radio-label" type="radio">
+        Yes
+      </label>
+      <label>
+        <input name="radio-label" type="radio">
+        No
+      </label>
+    </label>
+    <label>
+      What is your favorite color?
+      <input name="color-label" type="color">
+    </label>
+    <label>
+      Date label
+      <input name="date-label" type="date" placeholder="Date label">
+    </label>
+    <label>
+      What time do you go to bed?
+      <input name="time-label" type="time">
+    </label>
+    <label>
+     What your favourite brand of cars?
+      <select name="select">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </label>
+    <label>
+      How do you rate our work?
+      <input name="range-label" type="range" placeholder="Range label">
+    </label>
+  </fieldset>
+  
+  
+  <fieldset>
+    <legend>Your comments:</legend>
+    <label>
+      Textarea label
+      <textarea name="" id="" cols="30" rows="10" placeholder="Comments"></textarea>
+    </label>
+  </fieldset>
+ 
+  
+  <button type="submit">Send</button>
+</form>
+</body>
+</html>
